@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input-one" onkeyup="upKey()" placeholder="keyup">
+    <input type="text" id="input-two" onkeydown="downKey()" placeholder="keydown">
+    <input type="text" id="input-three" onkeypress="pressKey()" placeholder="keypress">
+
+    <!-- 
+        keyup
+        keydown
+        keypress
+     -->
+
+     <script>
+
+        function upKey(){
+            document.getElementById("input-one").style.backgroundColor="green";
+        }
+
+        function downKey(){
+            document.getElementById("input-two").style.backgroundColor="yellow";
+        }
+
+        function pressKey(){
+            document.getElementById("input-three").style.backgroundColor="red";
+        }
+
+     </script>
+</body>
+</html>

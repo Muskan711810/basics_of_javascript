@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <section id="parent">
+
+        <span id="span">This is span.</span>
+
+    </section>
+    <button type="button" onclick="insert()">Insert Element</button>
+    <button type="button" onclick="replace()">Replace Element</button>
+    <button type="button" onclick="remove()">Remove</button>
+
+    <script>
+
+        // 1) create a tag
+        // 2) create a content
+        // 3) insert content within tag
+        // 4) insert create element into main section
+
+
+        function insert(){
+           var element = document.createElement("h2");
+           var content = document.createTextNode("This is h2");
+           element.appendChild(content);
+           document.getElementById("parent").appendChild(element);
+
+        }
+
+        function replace(){
+            var element = document.createElement("p");
+            var content = document.createTextNode("Hello World!");
+            element.appendChild(content);
+            element.setAttribute("id","para");
+            document.getElementById("parent").replaceChild(element,span);
+        }
+
+        function remove(){
+            document.getElementById("parent").removeChild(document.getElementById("para"));
+        }
+
+    </script>
+    
+</body>
+</html>

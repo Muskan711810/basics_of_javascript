@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Element</title>
+</head>
+<body>
+    <section id="parent">
+
+        <span id="h3">This is H3</span>
+    </section>    
+         
+    <button type="button" onclick="insert()">Create Anchor</button>
+    <button type="button" onclick="replace()">Replace Element</button>
+    <button type="button" onclick="remove()">Remove </button>
+    <script>
+        
+        function insert(){
+           var element = document.createElement("a");
+           var content = document.createTextNode("This is anchor");
+           element.appendChild(content);
+           element.setAttribute("href","#");
+           document.getElementById("parent").appendChild(element);
+
+        }
+        function replace(){
+           var element= document.createElement("h4");
+            var content= document.createTextNode("This is a H4");
+            element.appendChild(content);
+            element.setAttribute("id","h5");
+            document.getElementById("parent").replaceChild(element,h3);
+        }
+    
+        function remove(){
+            document.getElementById("parent").removeChild(document.getElementById("h5"));
+        }
+
+
+    </script>
+</body>
+</html>

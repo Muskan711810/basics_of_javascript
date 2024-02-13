@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            width: 300px;
+            height: 300px;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="main"></div>
+    <button type="button" id="btn">Click</button>
+
+    <script>
+        document.getElementById("btn").addEventListener("click",changeBg);
+        function changeBg(){
+            document.getElementById("main").style.backgroundColor="red";
+
+        }
+
+    </script>
+    
+</body>
+</html>

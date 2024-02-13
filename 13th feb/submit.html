@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Demo</title>
+</head>
+<body>
+  
+
+    <form name="xyz" method="" action="abc.html" onsubmit="event.preventDefault();valueOne()">
+        <input type="text" id="text">
+        <button type="submit">Submit</button>
+
+    </form>
+
+   
+    
+    <script>
+
+        function valueOne(){
+           var data = document.getElementById("text").value;
+           console.log(data);
+          var abc = data.length;
+          console.log(abc);
+
+          if(abc<4){
+            document.getElementById("text").style.border="2px solid red";
+          }else{
+            document.getElementById("text").style.border="2px solid green";
+            document.xyz.submit();
+          }
+          
+        }
+
+        
+    </script>
+</body>
+</html>
