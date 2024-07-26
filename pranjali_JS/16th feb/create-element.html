@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+
+        <!-- <h1 id="heading">Create Elements by jQuery.</h1> -->
+
+    </div>
+    <button type="button" id="btn-two">Empty</button>
+    <button type="button" id="btn">Click</button>
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("#parent").append("<p>This is paragraph</p>");
+                $("#parent").prepend("<span>This is span tag.</span>");
+                $("span").attr("id","span");
+                $("#span").after("<a href='#'>Click link</a>");
+                $("#span").before("<h1>This is First element</h1>");
+                // $("#heading").after("<a href='#'>Click link</a>");
+
+            });
+            $("#btn-two").click(function(){
+                $("#span").empty();
+            })
+            
+            
+        })
+    </script>
+</body>
+</html>
