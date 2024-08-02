@@ -10,5 +10,13 @@ body{
 .container
 {
     height: 70vh;
-    
+}
+.game
+{
+    height: 60vmin;
+}
+.box
+{
+    height: 18vmin;
+    width: 18vmin;
 }
