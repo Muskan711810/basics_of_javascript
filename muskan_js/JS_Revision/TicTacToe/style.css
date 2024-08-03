@@ -45,3 +45,20 @@ body{
     background-color: darkslategray;
     color: aliceblue;
 }
+#new-btn
+{
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    border: none;
+    background-color: darkslategray;
+    color: aliceblue;
+}
+#msg
+{
+    font-size: 8vmin;
+    color: rgb(211, 10, 10);
+}
+.msg-container{
+    /* height: 10vmin; */
+}
