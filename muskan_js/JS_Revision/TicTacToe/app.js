@@ -1,6 +1,6 @@
 let boxes = document.querySelectorAll(".box");
 let resetBtn = document.querySelector("#reset-btn");
-let newbtn = document.querySelector("#new-btn");
+let newGameBtn = document.querySelector("#new-btn");
 let msgContainer = document.querySelector(".msg-container");
 let msg = document.querySelector("#msg");
 
@@ -25,7 +25,6 @@ const resetGame = () =>{
 };
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
-        console.log("box was clicked");
        if(turn0){
         box.innerText = "0";
         turn0 = false;
@@ -65,7 +64,6 @@ const checkWinner = () => {
 
         if(pos1 != "" && pos2 != "" && pos3 !=""){
             if(pos1 === pos2 && pos2 ===pos3){
-                console.log("winner",pos1);
                 showWinner(pos1);
             }
         }
@@ -73,4 +71,4 @@ const checkWinner = () => {
 };
 
 newGameBtn.addEventListener("click",resetGame);
-resetBtn.addEventListener("click",resetBtn);
+resetBtn.addEventListener("click",resetGame);

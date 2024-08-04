@@ -4,7 +4,7 @@
     padding: 0;
 }
 body{
-    background-color: rgb(175, 135, 94);
+    background-color: rgb(230, 190, 151);
     text-align: center;
 }
 .container
@@ -33,8 +33,8 @@ body{
     border: none;
     box-shadow: 0 0 1rem rgba(0,0,0,0.3);
     font-size: 10vmin;
-    color: firebrick;
-    background-color: burlywood;
+    color: rgb(241, 207, 207);
+    background-color: rgb(39, 16, 27);
 }
 #reset-btn
 {
@@ -61,4 +61,7 @@ body{
 }
 .msg-container{
     /* height: 10vmin; */
+}
+.hide{
+    display: none;
 }
