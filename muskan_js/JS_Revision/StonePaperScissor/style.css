@@ -16,12 +16,12 @@
     
     
 }
-.imgs:hover{
+.choice:hover{
     cursor: pointer;
     border: 2px solid black;
     box-sizing: border-box;
 }
-.imgs
+.choice
 {
     height: 200px;
     width: 200px;
@@ -36,7 +36,7 @@ img{
     width: 150px;
     border-radius: 28%;
 }
-.container{
+.choices{
     display: flex;
     margin-top: 4rem;
     justify-content: center;
